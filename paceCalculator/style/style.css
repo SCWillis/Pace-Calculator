@@ -1,0 +1,170 @@
+
+/*colors*/
+/*#03afff , #31ade6 , #ffd503 , #ff0357*/
+
+/*font-family: 'Russo One', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body
+{
+	/*background:linear-gradient(to right, #d4eeff, #03afff);*/
+	/*background:linear-gradient(to right, #d4eeff, white);*/
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.25em;
+	background: #c0392b;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+h1
+{
+	font-family: 'Russo One', sans-serif;
+	color:#f9f9f9;
+	font-size: 3em;
+	/*font-size: 3em;*/
+	letter-spacing: 2px;
+	/*background-color:#544e4e; */
+	background: linear-gradient(to bottom, #544e4e, black);
+	/*background-color:#ffd503; */
+	padding:5% 0% 5% 0%;
+	margin:0%;
+}
+
+ul
+{
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+
+li
+{
+	padding-bottom: 10%;
+}
+
+input
+{
+	width:15%;
+}
+
+#container
+{
+	width:50%;
+	max-width: 700px;
+	margin:0 auto;
+	background-color: #f9f9f9;
+	/*background-color: white;*/
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+#targetBlock
+{
+	/*padding:0% 0% 0% 0% ;*/
+	padding:5% 0% 5% 10% ;
+}
+
+
+.inputBlock
+{
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	margin:0px;
+	transition: 0.5s linear;
+}
+
+#distanceBlock
+{
+/**/
+}
+
+.showResult
+{
+	display:none;	
+}
+
+.activeInput
+{
+	/*display: none;*/
+	opacity: 0;
+	/*padding-top: 10%;*/
+	/*padding-bottom: 10%;*/
+	/*margin:0px;*/
+	transition: 0.5s linear;
+
+	/*background-color: #ffd503;*/
+}
+
+
+.entry
+{
+	border:2px solid #d63524;
+	color:#d63524;
+}
+
+
+.target
+{
+	width:5%;
+	margin-right: 10%;
+	margin-left: 0%;
+}
+
+.void
+{
+	color:black;
+	/*display: none;*/
+	background-color: white;
+}
+
+.inputHeading
+{
+	margin:0% 5% 0% 5%;
+}
+
+
+
+
+
+/*DIFFERENT MEDIA SIZES*/
+@media (max-width: 660px) 
+{
+
+
+body
+{
+	background:linear-gradient(to right, #d4eeff, #03afff);
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+}
+
+
+
+h1
+{
+	font-family: 'Russo One', sans-serif;
+	font-size: 100%;
+	/*font-size: 3em;*/
+	letter-spacing: 2px;
+	background-color:#ffd503; 
+	padding:2.5% 0% 2.5% 0%;
+}
+
+
+.target
+{
+	display: block;
+	text-align: center;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+}
