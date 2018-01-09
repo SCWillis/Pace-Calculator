@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="assets/lib/jquery-3.2.1.js"></script>
+	<script src="https://use.fontawesome.com/c241e6a715.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu:500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<title>Race Calculator</title>
+</head>
+<body>
+	<div id="container">
+		<h1>Race Calculator</h1>
+		<!-- <h2>What do you want to calculate? <span></span></h2> -->
+		<form class="inputBlock" id="targetBlock">
+			Distance<input class="target" type="radio" name="targetMetric" value="distance">
+			Time<input class="target" type="radio" name="targetMetric" value="time">
+			Pace<input class="target" type="radio" name="targetMetric" value="pace">
+		</form>		
+		
+
+		<ul>
+			<li class= "inputBlock" id="distanceBlock">
+				<h2 id="distanceResult"><span></span></h2>
+				<input class= "entry distance" id="distanceInput" type="number" name="" min="0">
+				<select>
+					<option>Miles</option>
+					<option>Kilometers</option>
+				</select>
+			</li>
+			
+			<li class= "inputBlock " id="timeBlock">
+				<h2 id="timeResult"><span></span></h2>
+				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div>
+				<span>Time </span><input class="entry time" id="hrsTime" type="number" name="" min="0">
+				<input class="entry time" id="minTime" type="number" name="" min="0">
+				<input class="entry time" id="secTime" type="number" name="" min="0">
+				<!-- <button>T</button> -->
+			</li>
+			
+			<li class= "inputBlock" id="paceBlock">
+				<h2 id="paceResult"><span></span></h2>
+				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div>
+				<span>Pace </span><input class="entry pace" id="hrsPace" type="number" name="" min="0">
+				<input class="entry pace" id="minPace" type="number" name="" min="0">
+				<input class="entry pace" id="secPace" type="number" name="" min="0"> 
+			</li>
+		</ul>
+
+		<button id="calculate">Calculate!</button>
+		<button id="reset">Reset</button>
+		<h3 id="results"></h1>
+	</div>
+
+<script type="text/javascript" src="assets/function/newFunctions.js"></script>
+</body>
+</html>
