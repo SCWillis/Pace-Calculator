@@ -1,1 +1,1 @@
-This is some basic information about the app and its layout.
+Location for the html page to be shown in the browser.
