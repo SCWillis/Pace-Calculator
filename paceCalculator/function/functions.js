@@ -309,15 +309,23 @@ function reset(){
 	var totalTime = 0;
 	var totalPace = 0;
 
+	//reset all the input blocks
+	$("#distanceBlock").removeClass("activeInput");
+	$("#timeBlock").removeClass("activeInput");
+	$("#paceBlock").removeClass("activeInput");
+
 	//reset all input vals
 	for(var i = 0; i < inputList.length; i++){
 		$(inputList[i]).val("");
+		$(inputList[i]).removeClass("void");
+
 	}
 
 	//reset all the radio buttons
 	for(var i = 0; i < targetList.length; i++){
 		if(targetList[i].checked = false){
 			targetValue = targetList[i].value;
+
 		}
 	}
 

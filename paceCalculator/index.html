@@ -12,9 +12,15 @@
 		<h1>Race Calculator</h1>
 		<!-- <h2>What do you want to calculate? <span></span></h2> -->
 		<form class="inputBlock" id="targetBlock">
-			Distance<input class="target" type="radio" name="targetMetric" value="distance">
-			Time<input class="target" type="radio" name="targetMetric" value="time">
-			Pace<input class="target" type="radio" name="targetMetric" value="pace">
+			<label for="target1">Distance</label>
+			<input id="target1" class="target" type="radio" name="targetMetric" value="distance">
+			<!-- Distance<input class="target" type="radio" name="targetMetric" value="distance"> -->
+			<label for="target1">Time</label>
+			<input id="target2" class="target" type="radio" name="targetMetric" value="time">
+			<!-- Time<input class="target" type="radio" name="targetMetric" value="time"> -->
+			<label for="target1">Pace</label>
+			<input id="target3" class="target" type="radio" name="targetMetric" value="pace">
+			<!-- Pace<input class="target" type="radio" name="targetMetric" value="pace"> -->
 		</form>		
 		
 
@@ -30,7 +36,12 @@
 			
 			<li class= "inputBlock " id="timeBlock">
 				<h2 id="timeResult"><span></span></h2>
-				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div>
+				
+				<div class="inputHeading"><span>hrs</span><span>min</span><span>sec</span></div>
+<!-- 
+				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div> -->
+
+
 				<span>Time </span><input class="entry time" id="hrsTime" type="number" name="" min="0">
 				<input class="entry time" id="minTime" type="number" name="" min="0">
 				<input class="entry time" id="secTime" type="number" name="" min="0">
@@ -39,7 +50,8 @@
 			
 			<li class= "inputBlock" id="paceBlock">
 				<h2 id="paceResult"><span></span></h2>
-				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div>
+				<div class="inputHeading"><span>hrs</span><span>min</span><span>sec</span></div>
+<!-- 				<div><span class="inputHeading">hrs</span><span class="inputHeading">min</span><span class="inputHeading">sec</span></div> -->
 				<span>Pace </span><input class="entry pace" id="hrsPace" type="number" name="" min="0">
 				<input class="entry pace" id="minPace" type="number" name="" min="0">
 				<input class="entry pace" id="secPace" type="number" name="" min="0"> 
